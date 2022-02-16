@@ -1,22 +1,14 @@
-# Jungle Scout CDK Bootcamp
+# Welcome to your CDK TypeScript project!
 
-## Setup
+This is a blank project for TypeScript development with CDK.
 
-1. Install or update nvm on your machine
+The `cdk.json` file tells the CDK Toolkit how to execute your app.
 
-```bash
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
+## Useful commands
 
-```
-
-2. Make sure you are using Node v16
-
-```bash
-nvm use 16
-```
-
-3. Install dependencies
-
-```bash
-npm install
-```
+ * `npm run build`   compile typescript to js
+ * `npm run watch`   watch for changes and compile
+ * `npm run test`    perform the jest unit tests
+ * `cdk deploy`      deploy this stack to your default AWS account/region
+ * `cdk diff`        compare deployed stack with current state
+ * `cdk synth`       emits the synthesized CloudFormation template
