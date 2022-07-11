@@ -9,7 +9,7 @@ export async function handler(
   context: Context
 ): Promise<APIGatewayProxyResult> {
   return {
-    body: "Hello from a Lambda Function",
+    body: "Hello from a Lambda Function - by Michael",
     statusCode: 200,
   };
 }
