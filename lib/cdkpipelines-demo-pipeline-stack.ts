@@ -35,12 +35,12 @@ export class CdkpipelinesDemoPipelineStack extends Stack {
       })
     );
 
-    // const prod = new CdkpipelinesDemoStage(this, "Prod", {
-    //   env: { account: "612364149025", region: "us-east-1" },
-    // });
-    // pipeline.addStage(prod, {
-    //   pre: [new ManualApprovalStep("PromoteToProd")],
-    // });    
+    const prod = new CdkpipelinesDemoStage(this, "Prod", {
+      env: { account: "612364149025", region: "us-east-1" },
+    });
+    pipeline.addStage(prod, {
+      pre: [new ManualApprovalStep("PromoteToProd")],
+    });    
     
     
   }
