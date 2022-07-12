@@ -1,0 +1,13 @@
+aws secretsmanager create-secret --region us-east-1 --name github-token --secret-string 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 --profile acloud-sandbox
+
+
+
+npx cdk bootstrap --cloudformation-execution-policies arn:aws:iam::aws:policy/AdministratorAccess aws://612364149025/us-east-1 --profile acloud-sandbox
+
+npx cdk deploy CdkpipelinesDemoPipelineStack --profile acloud-sandbox
+
+
+
+Outputs:
+PreProd-WebService:https://2x9sx4y906.execute-api.us-east-1.amazonaws.com/prod/
+Prod-WebService:https://2opouwn1c9.execute-api.us-east-1.amazonaws.com/prod/
