@@ -1,4 +1,6 @@
-aws secretsmanager create-secret --region us-east-1 --name github-token --secret-string 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 --profile acloud-sandbox
+aws secretsmanager create-secret --region us-east-1 --name github-token --secret-string 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 --profile acloud-sandbox
+
+aws secretsmanager get-secret-value --secret-id github-token --region us-east-1 --profile acloud-sandbox
 
 
 
@@ -9,5 +11,4 @@ npx cdk deploy CdkpipelinesDemoPipelineStack --profile acloud-sandbox
 
 
 Outputs:
-PreProd-WebService:https://2x9sx4y906.execute-api.us-east-1.amazonaws.com/prod/
-Prod-WebService:https://2opouwn1c9.execute-api.us-east-1.amazonaws.com/prod/
+https://3celfh329h.execute-api.us-east-1.amazonaws.com/prod/
