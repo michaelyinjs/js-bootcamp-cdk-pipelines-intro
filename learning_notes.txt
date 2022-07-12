@@ -2,7 +2,7 @@ aws secretsmanager create-secret --region us-east-1 --name github-token --secret
 
 
 
-npx cdk bootstrap --cloudformation-execution-policies arn:aws:iam::aws:policy/AdministratorAccess aws://612364149025/us-east-1 --profile acloud-sandbox
+npx cdk bootstrap --cloudformation-execution-policies arn:aws:iam::aws:policy/AdministratorAccess aws://085167882865/us-east-1 --profile acloud-sandbox
 
 npx cdk deploy CdkpipelinesDemoPipelineStack --profile acloud-sandbox
 
