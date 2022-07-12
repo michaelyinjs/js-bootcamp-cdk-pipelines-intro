@@ -5,7 +5,7 @@ import { CdkpipelinesDemoPipelineStack } from "../lib/cdkpipelines-demo-pipeline
 const app = new App();
 
 new CdkpipelinesDemoPipelineStack(app, "CdkpipelinesDemoPipelineStack", {
-  env: { account: "040507694803", region: "us-east-1" },
+  env: { account: "417055865024", region: "us-east-1" },
 });
 
 app.synth();
